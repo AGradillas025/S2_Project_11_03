@@ -14,14 +14,15 @@
    quotation tag in the Web page.
 
 */
-/*  */
+/* A command was inserted to call the function, generating a random number from 0 to 9. The result from the function will be stored in the randomQ variable. */
 var size = 10;
 var randomQ = randomInt(0, size);
+
+/* A variable named quoteElem refrences the first element in the document the has the quote tag name. The getQuote function is called using the randomQ variable as the parameter value to generate a random Jane Austen quote. */
 document.getElementById("quote").innerHTML = getQuote(randomQ);
 
-/*  */
+/* The function named randomInt will be used randomly generate an integer. There are 2 parameters lowest and size. The lowest parameter will specify the lowest value for the random integer and the size is the number of values the random integer can choose from. The 2 parameters and the math.floor and math.random methods will return a random integer within the specified range. */
 function randomInt(lowest, size) {
-
     return Math.floor(Math.random() * size);
 }
 
